@@ -1,0 +1,20 @@
+<apex:page Controller="CustomerClass">
+        <apex:pageBlock title="INVOICE">
+          <apex:pageBlockSection title="Customer details">
+             <apex:outputText value="{!mmm.Name}"/><br/>
+             <apex:outputText value="{!mmm.Email__c}"/><br/>
+             <apex:outputText value="{!mmm.Phone__c}"/><br/>
+             </apex:pageBlockSection>
+           <apex:pageBlockSection title="Driver and Delivery Charges">
+             <apex:outputText value="{!nnn.GST__c}"/><br/>
+             <apex:outputText value="{!nnn.Price__c}"/><br/>
+             <apex:outputText value="{!nnn.Total__c}"/><br/>
+             
+             <apex:outputText value="{!nnn.Extra_Shipping_Charges__c}"/><br/>
+             </apex:pageBlockSection>
+           <apex:pageBlockSection title="Product Details">
+              <apex:outputText value="{!xxx.Product_Name__c}"/><br/> 
+              <apex:outputText value="{!xxx.Product_Price__c}"/><br/> 
+           </apex:pageBlockSection>
+        </apex:pageBlock>
+</apex:page>
